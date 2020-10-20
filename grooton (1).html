@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Details</title>
+    <style>
+    .slidecontainer {
+  width: 40%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 40%; /* Full-width */
+  height: 15px; /* Specified height */
+  border-radius:5px;
+  background: darkgrey;/* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px;
+    border-radius: 50%;/* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+body {
+    background-image: url("download.jpeg");
+    background-color: #cccccc;
+   }
+.slider::-moz-range-thumb {
+  width: 15px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  border-radius:50%;
+    background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}</style>
+</head>
+<body>
+  <form action="form2.php" method="post">
+    <h1>Grootan</h1>
+    <label>Name</label>
+    <input type="text" name="name"><br><br>
+    <label>Age</label> 
+    <input type="number" name="age"><br><br>
+    <label>Country</label>
+    <select name="count">
+    <option  >India</option>
+    <option >Afghanistan</option>
+        <option>Argentina</option>
+    <option >Australia</option>
+    <option >Bangladesh</option>
+    <option >Canada</option>
+    <option >Egypt</option>
+    </select><br><br>
+    <label>DOB</label>n
+    <input type="date" name="dob"><br><br>
+    <label>Gender</label>
+    <input type="radio" name="male">Male
+    <input type="radio" name="female">Female<br><br>
+    <label>Languages Known</label>
+    <select name="s">
+    <option >English</option>
+    <option ></option>Tamil</option>
+    <option >Hindi</option>
+    <option >Kannada</option>
+    <option >Malayalam</option>
+    </select><br><br>
+    <label>Favourite Color</label>
+    <input type="color" name="color"><br><br>
+    <label>Email</label>
+    <input type="text" name="mail"><br><br>
+    <label>Website Address</label>
+    <input type="text" name="add"><br><br>
+    <div class="slidecontainer">
+  CGPA<input type="button" value="Submit">
+</form>
+    </body>
+    </html>
